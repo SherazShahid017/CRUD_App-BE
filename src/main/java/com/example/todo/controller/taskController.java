@@ -39,11 +39,6 @@ public class taskController {
 		return new ResponseEntity<List<Task>>(this.service.getTask(), HttpStatus.OK);
 	}
 
-//	@PutMapping("/update/{id}")
-//	public ResponseEntity<Task> updateTask(Task task, @PathParam("id") Integer id) {
-//		return new ResponseEntity<Task>(this.service.updateTask(task, id), HttpStatus.ACCEPTED);
-//	}
-
 	@PutMapping("/update")
 	public ResponseEntity<Task> updateTask(@PathParam("id") Integer id, @RequestBody Task task) {
 		return new ResponseEntity<Task>(this.service.updateTask(task, id), HttpStatus.ACCEPTED);
