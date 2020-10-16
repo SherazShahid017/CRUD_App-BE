@@ -13,6 +13,7 @@ public class Task {
 	private Integer id;
 
 	private String description;
+	private boolean completed;
 
 	// CONSTRUCTORS
 
@@ -23,6 +24,7 @@ public class Task {
 	public Task(String description) {
 		super();
 		this.description = description;
+//		this.completed = completed;
 	}
 
 	public Integer getId() {
@@ -41,15 +43,24 @@ public class Task {
 		this.description = description;
 	}
 
+	public boolean isCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(boolean completed) {
+		this.completed = completed;
+	}
+
 	@Override
 	public String toString() {
-		return "Task [id=" + id + ", Description=" + description + "]";
+		return "Task [id=" + id + ", description=" + description + ", completed=" + completed + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + (completed ? 1231 : 1237);
 		result = prime * result + ((description == null) ? 0 : description.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
@@ -64,6 +75,8 @@ public class Task {
 		if (getClass() != obj.getClass())
 			return false;
 		Task other = (Task) obj;
+		if (completed != other.completed)
+			return false;
 		if (description == null) {
 			if (other.description != null)
 				return false;

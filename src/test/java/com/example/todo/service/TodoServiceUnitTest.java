@@ -97,4 +97,10 @@ public class TodoServiceUnitTest {
 		assertThat(this.service.deleteTask(id)).isEqualTo(true);
 	}
 
+	@Test
+	void testComplete() {
+
+		// GIVEN
+
+	}
 }
