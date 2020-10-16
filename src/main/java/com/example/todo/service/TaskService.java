@@ -33,6 +33,14 @@ public class TaskService {
 		return this.repo.save(oldTask);
 	}
 
+	public Task completeTask(Integer id) {
+
+		Task newTask = this.repo.findById(id).get();
+		newTask.setCompleted(true);
+
+		return this.repo.save(newTask);
+	}
+
 	public boolean deleteTask(Integer id) {
 		this.repo.deleteById(id);
 		return !this.repo.existsById(id);

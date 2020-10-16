@@ -39,13 +39,15 @@ public class TodoIntergrationTesting {
 
 	@Test
 	void createTest() throws Exception {
-		Task newTask = new Task("Go home then go gym");
+		Task newTask = new Task("Go take the dog for a walk");
+
 		String body = this.mapper.writeValueAsString(newTask);
+
 		RequestBuilder req = post("/create").contentType(MediaType.APPLICATION_JSON).content(body);
 
 		ResultMatcher checkStatus = status().isCreated();
 
-		Task savedTask = new Task("Go home then go gym");
+		Task savedTask = new Task("Go take the dog for a walk");
 		savedTask.setId(2);
 
 		String ResultBody = this.mapper.writeValueAsString(savedTask);
@@ -53,6 +55,7 @@ public class TodoIntergrationTesting {
 		ResultMatcher checkBody = content().json(ResultBody);
 
 		this.mockMVC.perform(req).andExpect(checkStatus).andExpect(checkBody);
+
 	}
 
 	@Test
@@ -92,4 +95,5 @@ public class TodoIntergrationTesting {
 
 		this.mockMVC.perform(get("/get")).andExpect(status().isOk()).andExpect(content().json(ResponseBody));
 	}
+
 }

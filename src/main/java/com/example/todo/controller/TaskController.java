@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -20,11 +21,11 @@ import com.example.todo.service.TaskService;
 
 @RestController
 @CrossOrigin
-public class taskController {
+public class TaskController {
 
 	private TaskService service;
 
-	public taskController(TaskService service) {
+	public TaskController(TaskService service) {
 		super();
 		this.service = service;
 	}
@@ -34,7 +35,6 @@ public class taskController {
 		return new ResponseEntity<Task>(this.service.createTask(task), HttpStatus.CREATED);
 	}
 
-
 	@GetMapping("/get")
 	public ResponseEntity<List<Task>> getTask() {
 		return new ResponseEntity<List<Task>>(this.service.getTask(), HttpStatus.OK);
@@ -43,6 +43,11 @@ public class taskController {
 	@PutMapping("/update")
 	public ResponseEntity<Task> updateTask(@PathParam("id") Integer id, @RequestBody Task task) {
 		return new ResponseEntity<Task>(this.service.updateTask(task, id), HttpStatus.ACCEPTED);
+	}
+
+	@PatchMapping("/complete/{id}")
+	public ResponseEntity<Task> completeTask(@PathVariable Integer id) {
+		return new ResponseEntity<Task>(this.service.completeTask(id), HttpStatus.ACCEPTED);
 	}
 
 	@DeleteMapping("/delete/{id}")
