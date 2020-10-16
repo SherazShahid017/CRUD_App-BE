@@ -1,8 +1,10 @@
 INSERT INTO `task`
 (
-`description`
+`description`,
+`completed`
 )
 VALUES
 (
-'Go gym then go home'
+'Go gym then go home',
+'false'
 );

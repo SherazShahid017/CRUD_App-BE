@@ -28,7 +28,7 @@ public class TodoServiceUnitTest {
 	void testCreate() {
 
 		// GIVEN
-		Integer id = 1;
+		Integer id = 2;
 
 		Task newTask = new Task("Go to the gym");
 		Task savedTask = new Task("Go to the gym");
@@ -45,7 +45,7 @@ public class TodoServiceUnitTest {
 	void testUpdate() {
 
 		// GIVEN
-		Integer id = 1;
+		Integer id = 2;
 
 		Task newTask = new Task("Go home then shopping");
 
@@ -86,7 +86,7 @@ public class TodoServiceUnitTest {
 	void testDelete() {
 
 		// GIVEN
-		Integer id = 1;
+		Integer id = 2;
 		Task deletedTask = new Task("Go home then shopping");
 		deletedTask.setId(id);
 
