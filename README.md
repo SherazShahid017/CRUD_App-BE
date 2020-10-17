@@ -122,7 +122,7 @@ If this project was to be completed again, as the base concept was understood an
 <ul>
   <li>This could potentially involve more than a single table infrastructure. </li>
   <li>I would also like to host the application on the cloud for optimal up-time and no reliance on host systems.  </li>
-  <li>To develop tests for the front end of the application </li><li>
+  <li>To develop tests for the front end of the application </li>
   <li>User input sanitation for database </li>
 </ul>
 
