@@ -63,7 +63,7 @@ Once all tasks were assigned story points, these were then grouped by epics whic
  *INSERT SCREENSHOT OF KANBAN BOARD HERE*
  
 
-<h2>Brief Overview of Risk Assessment</he>
+<h2>Brief Overview of Risk Assessment</h2>
 
 Throughout the course of a project, a Risk Assessment is used in order to increase awareness of potential risks to the outcome of the project, and ultimately prevent/mitigate these as best as possible. 
 
