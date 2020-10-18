@@ -60,7 +60,7 @@ These were then assigned story points in order to gauge the difficulty of the ta
 
 Once all tasks were assigned story points, these were then grouped by epics which would allow for a collation of related backlog items so that they could be grouped. I had set my epics to be grouped by functionality: Create, Read, Update, Delete and Functionality of the application. 
 
- *INSERT SCREENSHOT OF KANBAN BOARD HERE*
+ ![Imgur](https://i.imgur.com/bIqYOCr.png)
  
 
 <h2>Brief Overview of Risk Assessment</h2>
@@ -69,9 +69,9 @@ Throughout the course of a project, a Risk Assessment is used in order to increa
 
 <h3>Key </h3>
 
- *INSERT SCREENSHOT OF KEY HERE*
+ ![Imgur](https://i.imgur.com/gpjQoME.png)
  
- *INSERT SCREENSHOT OF RISK ASSESMENT HERE*
+ ![Imgur](https://i.imgur.com/L6bShHT.png)
 
  
  
@@ -83,8 +83,9 @@ This was with the addition of Unit Testing, which would test individual componen
 
 The overall test coverage of the application can be seen as below: 
 
- *INSERT SCREENSHOTS OF TEST COVERAGE*
- 
+![Imgur](https://i.imgur.com/tnQ926m.png)
+
+![Imgur](https://i.imgur.com/VI4tdDf.png) 
 
 As can be seen, the overall coverage had been 84.3% and this is around/above industry standard. However, for a simple application I would have liked for this to be higher. 
 
@@ -102,7 +103,7 @@ Bootstrap and W3schools were both used for CSS styling in styling the front end.
 
 The main task area would include a list of all tasks entered, each with the clear option to Update or Delete. There had been an attempt for a task to first be sent to a completed section on ‘completed’ button click, however this was not possible within the time restraints of this project and will likely be added as a future feature. 
 
- *INSERT SCREENSHOT OF FRONT END HERE*
+![Imgur](https://i.imgur.com/x3D1PFc.png)
 
 
 <h2>Known Issues & Future Improvements </h2>
@@ -131,6 +132,3 @@ If this project was to be completed again, as the base concept was understood an
 <h2>Author(s)</h2>
 
 Sheraz Shahid 
- 
-
- 
